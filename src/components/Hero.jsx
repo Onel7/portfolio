@@ -1,4 +1,5 @@
-import { ArrowDownRight, ArrowUpRight, Cpu, Smartphone } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
+import profilePhoto from '../assets/onel-segbozo-profile.jpg'
 
 export default function Hero() {
   return (
@@ -16,14 +17,10 @@ export default function Hero() {
           </div>
           <div className="mt-12 grid max-w-xl grid-cols-3 gap-3 border-t border-white/[0.08] pt-7"><div><b className="font-display text-2xl text-white">2+</b><p className="mt-1 text-[11px] text-slate-500">Projets réalisés</p></div><div><b className="font-display text-2xl text-white">100%</b><p className="mt-1 text-[11px] text-slate-500">Passion mobile</p></div><div><b className="font-display text-2xl text-cyan-400">∞</b><p className="mt-1 text-[11px] text-slate-500">Curiosité technique</p></div></div>
         </div>
-        <div className="hero-enter-delay relative hidden lg:block">
-          <div className="absolute -inset-12 rounded-full bg-cyan-400/[0.07] blur-3xl" />
-          <div className="glass relative mx-auto w-[350px] animate-float rounded-[36px] p-3 shadow-2xl shadow-black/60">
-            <div className="code-window overflow-hidden rounded-[27px] border border-white/[0.06] bg-[#080d14]">
-              <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-4"><div className="flex gap-1.5"><span className="h-2 w-2 rounded-full bg-rose-400/70"/><span className="h-2 w-2 rounded-full bg-amber-400/70"/><span className="h-2 w-2 rounded-full bg-emerald-400/70"/></div><Smartphone size={15} className="text-cyan-400" /></div>
-              <div className="space-y-5 p-6 font-mono text-[12px] leading-6"><p><span className="text-violet-400">class</span> <span className="text-cyan-300">MobileEngineer</span> {'{'}</p><p className="pl-4 text-slate-500">// Build. Measure. Optimize.</p><p className="pl-4"><span className="text-violet-400">final</span> stack = [<br/><span className="pl-5 text-emerald-300">'Flutter'</span>, <span className="text-emerald-300">'Dart'</span>,<br/><span className="pl-5 text-emerald-300">'Core Systems'</span><br/>];</p><p className="pl-4"><span className="text-violet-400">bool</span> get ready =&gt; <span className="text-amber-300">true</span>;</p><p>{'}'}</p></div>
-              <div className="mx-5 mb-5 flex items-center gap-3 rounded-xl border border-cyan-400/10 bg-cyan-400/[0.04] p-4"><span className="rounded-lg bg-cyan-400/10 p-2 text-cyan-400"><Cpu size={18}/></span><div><p className="text-xs font-medium text-white">System status</p><p className="mt-0.5 font-mono text-[10px] text-emerald-400">● READY TO BUILD</p></div></div>
-            </div>
+        <div className="hero-enter-delay relative mx-auto w-full max-w-[420px] lg:block">
+          <div className="absolute -inset-12 rounded-full bg-cyan-400/[0.10] blur-3xl" />
+          <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-[#080d14] p-2 shadow-2xl shadow-black/60 transition duration-500 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-[0_30px_90px_rgba(0,255,180,.12)]">
+            <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="aspect-[4/5] w-full rounded-[32px] object-cover object-top" fetchPriority="high" />
           </div>
         </div>
       </div>
