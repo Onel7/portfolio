@@ -1,10 +1,10 @@
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
-import profilePhoto from '../assets/onel-segbozo-profile.jpg'
+import profilePhoto from '../assets/onel-segbozo-transparent.png'
 
 export default function Hero() {
   return (
     <section id="accueil" className="container-page relative flex min-h-screen items-center pb-16 pt-36">
-      <div className="grid w-full items-center gap-16 lg:grid-cols-[1.15fr_.85fr]">
+      <div className="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
         <div className="hero-enter">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1.5 text-xs font-medium text-cyan-300"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan-400" />Disponible pour de nouveaux projets</div>
           <p className="mb-3 text-sm font-medium uppercase tracking-[.22em] text-slate-500">Bonjour, je suis</p>
@@ -17,10 +17,10 @@ export default function Hero() {
           </div>
           <div className="mt-12 grid max-w-xl grid-cols-3 gap-3 border-t border-white/[0.08] pt-7"><div><b className="font-display text-2xl text-white">2+</b><p className="mt-1 text-[11px] text-slate-500">Projets réalisés</p></div><div><b className="font-display text-2xl text-white">100%</b><p className="mt-1 text-[11px] text-slate-500">Passion mobile</p></div><div><b className="font-display text-2xl text-cyan-400">∞</b><p className="mt-1 text-[11px] text-slate-500">Curiosité technique</p></div></div>
         </div>
-        <div className="hero-enter-delay relative mx-auto w-full max-w-[420px] lg:block">
-          <div className="absolute -inset-12 rounded-full bg-cyan-400/[0.10] blur-3xl" />
-          <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-[#080d14] p-2 shadow-2xl shadow-black/60 transition duration-500 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-[0_30px_90px_rgba(0,255,180,.12)]">
-            <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="aspect-[4/5] w-full rounded-[32px] object-cover object-top" fetchPriority="high" />
+        <div className="hero-enter-delay relative mx-auto w-full max-w-[500px] lg:block">
+          <div className="absolute -inset-16 rounded-full bg-cyan-400/[0.12] blur-3xl" />
+          <div className="relative overflow-hidden rounded-[44px] border border-white/10 bg-gradient-to-b from-cyan-400/[0.06] to-[#080d14] px-3 pt-3 shadow-2xl shadow-black/60 transition duration-500 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-[0_30px_90px_rgba(0,255,180,.14)]">
+            <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="mx-auto h-auto w-full max-w-[466px] object-contain object-bottom" fetchPriority="high" />
           </div>
         </div>
       </div>
