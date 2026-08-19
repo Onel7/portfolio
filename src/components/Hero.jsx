@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="hero-enter">
           <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1.5 text-xs font-medium text-cyan-300"><span className="h-1.5 w-1.5 animate-pulse rounded-full bg-cyan-400" />Disponible pour de nouveaux projets</div>
           <p className="mb-3 text-sm font-medium uppercase tracking-[.22em] text-slate-500">Bonjour, je suis</p>
-          <h1 className="max-w-4xl text-5xl font-extrabold leading-[.98] tracking-[-0.055em] text-white sm:text-7xl lg:text-[82px]">O’nel<br/><span className="text-cyan-400">SEGBOZO</span></h1>
+          <h1 className="max-w-4xl text-5xl font-extrabold leading-[.98] tracking-[-0.055em] text-white sm:text-7xl lg:text-[82px]">Onel iloris<br/><span className="text-cyan-400">SEGBOZO</span></h1>
           <p className="mt-5 font-display text-xl font-semibold text-white sm:text-2xl">Développeur Mobile Flutter & Dart</p>
           <p className="mt-4 max-w-xl text-base leading-7 text-slate-400">Je conçois des applications mobiles performantes et intuitives, soutenues par de solides fondations en systèmes d’exploitation, C et algorithmique.</p>
           <div className="mt-9 flex flex-wrap gap-3">
