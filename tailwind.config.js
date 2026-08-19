@@ -9,7 +9,7 @@ export default {
         mono: ['Fira Code', 'ui-monospace', 'monospace'],
       },
       colors: {
-        ink: '#ffffff',
+        ink: '#030509',
         cyan: { 200: '#91ffe0', 300: '#4dffcc', 400: '#00ffb4', 500: '#00d99a' },
       },
       boxShadow: { glow: '0 0 50px rgba(0, 255, 180, 0.16)' },

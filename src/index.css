@@ -6,7 +6,7 @@
 @layer base {
   * { @apply border-slate-800; }
   html { color-scheme: dark; scroll-behavior: smooth; }
-  body { @apply m-0 bg-ink font-sans text-slate-700 antialiased; }
+  body { @apply m-0 bg-ink font-sans text-slate-200 antialiased; }
   h1, h2, h3 { font-family: 'Syne', ui-sans-serif, system-ui, sans-serif; }
   a, button { -webkit-tap-highlight-color: transparent; }
   ::selection { @apply bg-cyan-400 text-slate-950; }
@@ -34,7 +34,7 @@
 
 @layer components {
   .container-page { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
-  .glass { @apply border border-stone-900/10 bg-white/70 backdrop-blur-xl; }
+  .glass { @apply border border-white/[0.08] bg-[#090d12]/80 backdrop-blur-xl; }
   .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.22em] text-cyan-400; }
   .section-title { @apply mt-3 text-4xl font-bold tracking-[-0.04em] text-white sm:text-5xl; }
   .tech-tag { @apply rounded-md border border-white/[0.06] bg-white/[0.04] px-2.5 py-1 font-mono text-[11px] text-slate-400; }
@@ -45,15 +45,3 @@
   background-size: 52px 52px;
   mask-image: linear-gradient(to bottom, black, transparent 80%);
 }
-
-main .text-white, footer .text-white { color: #18201c; }
-main .text-slate-300, footer .text-slate-300 { color: #3f4944; }
-main .text-slate-400, footer .text-slate-400 { color: #5f6964; }
-main .text-slate-500, footer .text-slate-500 { color: #747d78; }
-#process { background: #f8faf9; border-color: rgba(24, 32, 28, .08); }
-#recherche > div { background: rgba(255, 255, 255, .58); border-color: rgba(24, 32, 28, .1); }
-.code-window, .dark-panel { color: #e2e8f0; }
-.code-window .text-white, .dark-panel .text-white { color: #fff; }
-.code-window .text-slate-300, .dark-panel .text-slate-300 { color: #cbd5e1; }
-.code-window .text-slate-400, .dark-panel .text-slate-400 { color: #94a3b8; }
-#apropos > div > div:first-child .text-white { color: #fff; }
