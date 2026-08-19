@@ -17,11 +17,9 @@ export default function Hero() {
           </div>
           <div className="mt-12 grid max-w-xl grid-cols-3 gap-3 border-t border-white/[0.08] pt-7"><div><b className="font-display text-2xl text-white">2+</b><p className="mt-1 text-[11px] text-slate-500">Projets réalisés</p></div><div><b className="font-display text-2xl text-white">100%</b><p className="mt-1 text-[11px] text-slate-500">Passion mobile</p></div><div><b className="font-display text-2xl text-cyan-400">∞</b><p className="mt-1 text-[11px] text-slate-500">Curiosité technique</p></div></div>
         </div>
-        <div className="hero-enter-delay relative mx-auto w-full max-w-[500px] lg:block">
-          <div className="absolute -inset-16 rounded-full bg-cyan-400/[0.12] blur-3xl" />
-          <div className="relative overflow-hidden rounded-[44px] border border-white/10 bg-gradient-to-b from-cyan-400/[0.06] to-[#080d14] px-3 pt-3 shadow-2xl shadow-black/60 transition duration-500 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-[0_30px_90px_rgba(0,255,180,.14)]">
-            <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="mx-auto h-auto w-full max-w-[466px] object-contain object-bottom" fetchPriority="high" />
-          </div>
+        <div className="hero-enter-delay relative mx-auto w-full max-w-[560px] lg:block">
+          <div className="absolute inset-x-8 inset-y-12 rounded-full bg-cyan-400/[0.14] blur-[90px]" />
+          <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="relative mx-auto h-auto w-full object-contain object-bottom drop-shadow-[0_28px_35px_rgba(0,0,0,.45)] transition duration-500 hover:-translate-y-2 hover:scale-[1.02]" fetchPriority="high" />
         </div>
       </div>
     </section>
