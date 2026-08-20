@@ -7,7 +7,7 @@ export default function Header({ language, onLanguageChange }) {
   return (
     <header className="fixed inset-x-0 top-4 z-50 px-4">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between rounded-2xl border border-white/[0.08] bg-[#05080c]/85 px-5 shadow-2xl shadow-black/30 backdrop-blur-xl sm:px-7" aria-label="Navigation principale">
-        <a href="#accueil" className="font-mono text-sm font-semibold tracking-tight text-white"><span className="text-cyan-400">&lt;</span>Onel.dev <span className="text-cyan-400">/&gt;</span></a>
+        <a href="#accueil" className="font-mono text-sm font-semibold tracking-tight text-white"><span className="text-cyan-400">&lt;</span>O’nel.dev <span className="text-cyan-400">/&gt;</span></a>
         <div className="hidden items-center gap-5 md:flex">
           {navLinks.map(({ label, href }) => <a key={href} href={href} className="text-sm text-slate-400 transition hover:text-white">{label}</a>)}
           <div className="flex rounded-lg border border-white/10 bg-white/5 p-1" aria-label="Choix de la langue"><button onClick={() => onLanguageChange('fr')} className={`rounded-md px-2 py-1 text-[10px] font-bold transition ${language === 'fr' ? 'bg-cyan-400 text-black' : 'text-slate-400 hover:text-white'}`}>FR</button><button onClick={() => onLanguageChange('en')} className={`rounded-md px-2 py-1 text-[10px] font-bold transition ${language === 'en' ? 'bg-cyan-400 text-black' : 'text-slate-400 hover:text-white'}`}>EN</button></div>
