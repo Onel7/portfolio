@@ -1,5 +1,6 @@
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react'
-import profilePhoto from '../assets/onel-segbozo-transparent.png'
+
+const profilePhoto = `${import.meta.env.BASE_URL}onel-iloris-segbozo-developpeur.png`
 
 export default function Hero() {
   return (
@@ -19,7 +20,7 @@ export default function Hero() {
         </div>
         <div className="hero-enter-delay relative mx-auto w-full max-w-[560px] lg:block">
           <div className="absolute inset-x-8 inset-y-12 rounded-full bg-cyan-400/[0.14] blur-[90px]" />
-          <img src={profilePhoto} alt="Portrait professionnel de Onel iloris SEGBOZO" className="relative mx-auto h-auto w-full object-contain object-bottom drop-shadow-[0_28px_35px_rgba(0,0,0,.45)] transition duration-500 hover:-translate-y-2 hover:scale-[1.02]" fetchPriority="high" />
+          <img src={profilePhoto} alt="Onel iloris SEGBOZO, développeur logiciel et mobile Flutter" width="466" height="535" className="relative mx-auto h-auto w-full object-contain object-bottom drop-shadow-[0_28px_35px_rgba(0,0,0,.45)] transition duration-500 hover:-translate-y-2 hover:scale-[1.02]" fetchPriority="high" />
         </div>
       </div>
     </section>
