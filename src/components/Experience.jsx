@@ -20,7 +20,7 @@ const experiences = [
 ]
 
 export default function Experience() {
-  return <section id="experience" className="container-page scroll-mt-24 py-24" data-reveal>
+  return <section id="experience" className="container-page scroll-mt-24 py-16 sm:py-20 lg:py-24" data-reveal>
     <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
       <div><p className="eyebrow">Mon parcours</p><h2 className="section-title">Expérience<br/><span className="text-cyan-400">Professionnelle.</span></h2><p className="mt-5 max-w-sm text-sm leading-6 text-slate-500">Une pratique du développement mobile renforcée par des bases solides en ingénierie informatique.</p></div>
       <div className="relative space-y-4 before:absolute before:bottom-8 before:left-6 before:top-8 before:w-px before:bg-gradient-to-b before:from-cyan-400/60 before:to-transparent">

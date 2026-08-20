@@ -8,7 +8,7 @@ const projects = [
 ]
 
 export default function Projects() {
-  return <section id="projets" className="container-page scroll-mt-24 py-24" data-reveal>
+  return <section id="projets" className="container-page scroll-mt-24 py-16 sm:py-20 lg:py-24" data-reveal>
     <div className="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p className="eyebrow">Ce que j’ai construit</p><h2 className="section-title">Projets <span className="text-cyan-400">Récents.</span></h2></div><p className="max-w-md text-sm leading-6 text-slate-500 md:text-right">Des réalisations qui répondent à des problèmes concrets avec une approche moderne et structurée.</p></div>
     <div className="grid gap-6 md:grid-cols-2">{projects.map(({ title, icon: Icon, problem, description, features, tags }, index) => <article key={title} className="glass group overflow-hidden rounded-[28px] transition-all duration-500 hover:-translate-y-2 hover:border-cyan-400/35 hover:shadow-[0_24px_70px_rgba(0,255,180,.09)]">
       <div className="relative flex h-52 items-center justify-center overflow-hidden bg-gradient-to-br from-cyan-400/15 via-emerald-500/[0.04] to-transparent"><div className="absolute inset-0 grid-overlay opacity-60"/><span className="absolute right-5 top-4 font-display text-6xl font-bold text-white/[0.04]">0{index + 1}</span><div className="relative flex h-24 w-24 items-center justify-center rounded-[26px] border border-white/10 bg-black/30 text-cyan-400 backdrop-blur-xl transition duration-700 group-hover:rotate-6 group-hover:scale-110 group-hover:border-cyan-400/40 group-hover:shadow-[0_0_50px_rgba(0,255,180,.16)]"><Icon size={40}/></div></div>

@@ -32,10 +32,10 @@ export default function Contact() {
 
   const inputClass = 'mt-2 w-full rounded-xl border border-white/[0.08] bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400/50 focus:ring-2 focus:ring-cyan-400/10'
 
-  return <footer id="contact" className="scroll-mt-16 border-t border-white/[0.06] pt-24">
+  return <footer id="contact" className="scroll-mt-16 border-t border-white/[0.06] pt-16 sm:pt-20 lg:pt-24">
     <div className="container-page" data-reveal>
       <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
-        <div><p className="eyebrow">// Contact</p><h2 className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl">Parlons de ton prochain projet.</h2><p className="mt-5 text-sm leading-6 text-slate-400">Une application Flutter, une collaboration technique ou une opportunité en ingénierie logicielle ? Écris-moi directement ici.</p><a href={`mailto:${contactEmail}`} className="mt-7 inline-flex items-center gap-2 text-sm text-cyan-300 transition hover:text-cyan-200"><Mail size={17}/>{contactEmail}</a></div>
+        <div><p className="eyebrow">// Contact</p><h2 className="mt-4 text-3xl font-bold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">Parlons de ton prochain projet.</h2><p className="mt-5 text-sm leading-6 text-slate-400">Une application Flutter, une collaboration technique ou une opportunité en ingénierie logicielle ? Écris-moi directement ici.</p><a href={`mailto:${contactEmail}`} className="mt-7 inline-flex max-w-full items-center gap-2 break-all text-sm text-cyan-300 transition hover:text-cyan-200"><Mail size={17} className="shrink-0"/>{contactEmail}</a></div>
         <form onSubmit={handleSubmit} className="glass rounded-2xl p-6 text-left sm:p-8">
           <input type="text" name="_honey" className="hidden" tabIndex="-1" autoComplete="off" />
           <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio" />
