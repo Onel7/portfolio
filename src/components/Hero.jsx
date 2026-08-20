@@ -4,7 +4,7 @@ const profilePhoto = `${import.meta.env.BASE_URL}onel-iloris-segbozo-developpeur
 
 export default function Hero() {
   return (
-    <section id="accueil" className="container-page relative flex min-h-screen items-center pb-12 pt-28 sm:pb-16 sm:pt-32 lg:pt-36">
+    <section id="accueil" className="container-page relative flex min-h-0 items-start pb-12 pt-24 sm:pb-16 sm:pt-28 lg:min-h-screen lg:items-center lg:pt-36">
       <div className="grid w-full items-center gap-8 sm:gap-10 lg:grid-cols-[1.05fr_.95fr] lg:gap-12">
         <div className="hero-enter">
           <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1.5 text-[11px] font-medium text-cyan-300 sm:mb-7 sm:text-xs"><span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-cyan-400" />Disponible pour de nouveaux projets</div>

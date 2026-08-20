@@ -5,7 +5,7 @@ import { navLinks } from '../data'
 export default function Header({ language, onLanguageChange }) {
   const [open, setOpen] = useState(false)
   return (
-    <header className="fixed inset-x-0 top-2 z-50 px-2 sm:top-4 sm:px-4">
+    <header className="fixed inset-x-0 top-[max(.5rem,env(safe-area-inset-top))] z-50 px-2 sm:top-[max(1rem,env(safe-area-inset-top))] sm:px-4">
       <nav className="relative mx-auto flex h-14 max-w-6xl items-center justify-between rounded-2xl border border-white/[0.08] bg-[#05080c]/90 px-3 shadow-2xl shadow-black/30 backdrop-blur-xl sm:h-16 sm:px-5 lg:px-7" aria-label="Navigation principale">
         <a href="#accueil" className="shrink-0 font-mono text-xs font-semibold tracking-tight text-white sm:text-sm"><span className="text-cyan-400">&lt;</span>O’nel.dev <span className="text-cyan-400">/&gt;</span></a>
         <div className="hidden items-center gap-4 lg:flex xl:gap-5">
