@@ -9,7 +9,7 @@ export default function Hero() {
         <div className="hero-enter min-w-0 max-w-full">
           <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-3 py-1.5 text-[11px] font-medium text-cyan-300 sm:mb-7 sm:text-xs"><span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-cyan-400" />Disponible pour de nouveaux projets</div>
           <p className="mb-3 text-xs font-medium uppercase tracking-[.2em] text-slate-500 sm:text-sm sm:tracking-[.22em]">Bonjour, je suis</p>
-          <h1 className="w-full max-w-4xl text-[clamp(2rem,11.5vw,4.5rem)] font-extrabold leading-[.98] tracking-[-0.055em] text-white lg:text-[82px]"><span className="block max-w-full whitespace-nowrap">O’nel iloris</span><span className="block max-w-full whitespace-nowrap text-cyan-400">SEGBOZO</span></h1>
+          <h1 className="w-full max-w-4xl text-[clamp(2rem,11.5vw,4.5rem)] font-extrabold leading-[.98] tracking-[-0.055em] text-white lg:text-[82px]"><span className="block max-w-full whitespace-nowrap">O'nel iloris</span><span className="block max-w-full whitespace-nowrap text-cyan-400">SEGBOZO</span></h1>
           <p className="mt-5 max-w-full font-display text-lg font-semibold leading-snug text-white sm:text-2xl">Développeur Mobile Flutter & Dart</p>
           <p className="mt-4 max-w-xl text-base leading-7 text-slate-400">Je conçois des applications mobiles performantes et intuitives, soutenues par de solides fondations en systèmes d’exploitation, C et algorithmique.</p>
           <div className="mt-8 grid gap-3 min-[400px]:flex min-[400px]:flex-wrap sm:mt-9">
@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
         <div className="hero-enter-delay relative mx-auto min-w-0 w-full max-w-[min(400px,calc(100vw-2rem))] sm:max-w-[480px] lg:max-w-[560px]">
           <div className="absolute inset-x-8 inset-y-12 rounded-full bg-cyan-400/[0.14] blur-[90px]" />
-          <img src={profilePhoto} alt="O’nel iloris SEGBOZO, développeur logiciel et mobile Flutter" width="466" height="535" className="relative mx-auto block h-auto max-w-full object-contain object-bottom drop-shadow-[0_28px_35px_rgba(0,0,0,.45)] transition duration-500 lg:hover:-translate-y-2 lg:hover:scale-[1.02]" fetchPriority="high" />
+          <img src={profilePhoto} alt="Portrait professionnel de O'nel iloris SEGBOZO, développeur logiciel et mobile Flutter" width="466" height="535" className="relative mx-auto block h-auto max-w-full object-contain object-bottom drop-shadow-[0_28px_35px_rgba(0,0,0,.45)] transition duration-500 lg:hover:-translate-y-2 lg:hover:scale-[1.02]" fetchPriority="high" />
         </div>
       </div>
     </section>

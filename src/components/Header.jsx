@@ -7,7 +7,7 @@ export default function Header({ language, onLanguageChange }) {
   return (
     <header className="fixed inset-x-0 top-[max(.5rem,env(safe-area-inset-top))] z-50 px-2 sm:top-[max(1rem,env(safe-area-inset-top))] sm:px-4">
       <nav className="relative mx-auto flex h-14 max-w-6xl items-center justify-between rounded-2xl border border-white/[0.08] bg-[#05080c]/90 px-3 shadow-2xl shadow-black/30 backdrop-blur-xl sm:h-16 sm:px-5 lg:px-7" aria-label="Navigation principale">
-        <a href="#accueil" className="shrink-0 font-mono text-xs font-semibold tracking-tight text-white sm:text-sm"><span className="text-cyan-400">&lt;</span>O’nel.dev <span className="text-cyan-400">/&gt;</span></a>
+        <a href="#accueil" className="shrink-0 font-mono text-xs font-semibold tracking-tight text-white sm:text-sm"><span className="text-cyan-400">&lt;</span>O'nel.dev <span className="text-cyan-400">/&gt;</span></a>
         <div className="hidden items-center gap-4 lg:flex xl:gap-5">
           {navLinks.map(({ label, href }) => <a key={href} href={href} className="text-sm text-slate-400 transition hover:text-white">{label}</a>)}
           <div className="flex rounded-lg border border-white/10 bg-white/5 p-1" aria-label="Choix de la langue"><button onClick={() => onLanguageChange('fr')} className={`rounded-md px-2 py-1 text-[10px] font-bold transition ${language === 'fr' ? 'bg-cyan-400 text-black' : 'text-slate-400 hover:text-white'}`}>FR</button><button onClick={() => onLanguageChange('en')} className={`rounded-md px-2 py-1 text-[10px] font-bold transition ${language === 'en' ? 'bg-cyan-400 text-black' : 'text-slate-400 hover:text-white'}`}>EN</button></div>

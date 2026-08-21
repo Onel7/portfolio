@@ -44,7 +44,7 @@ const translations = {
   'Parlons de ton prochain projet.': 'Let’s discuss your next project.', 'Une application Flutter, une collaboration technique ou une opportunité en ingénierie logicielle ? Écris-moi directement ici.': 'A Flutter application, a technical collaboration, or a software engineering opportunity? Send me a message directly.',
   'Nom': 'Name', 'E-mail': 'Email', 'Sujet': 'Subject', 'Envoyer le message': 'Send message', 'Envoi…': 'Sending…',
   'Merci ! Ton message a bien été envoyé.': 'Thank you! Your message has been sent.', 'Envoi impossible. Réessaie ou contacte-moi par e-mail.': 'Unable to send. Try again or contact me by email.',
-  'Développeur logiciel & mobile.': 'Software & mobile developer.', 'O’nel iloris SEGBOZO — Développeur logiciel & mobile.': 'O’nel iloris SEGBOZO — Software & mobile developer.', 'Ouvrir le menu': 'Open menu', 'Fermer le menu': 'Close menu', 'Navigation principale': 'Main navigation', 'Choix de la langue': 'Language selection',
+  'Développeur logiciel & mobile.': 'Software & mobile developer.', "O'nel iloris SEGBOZO — Développeur logiciel & mobile.": "O'nel iloris SEGBOZO — Software & mobile developer.", 'Ouvrir le menu': 'Open menu', 'Fermer le menu': 'Close menu', 'Navigation principale': 'Main navigation', 'Choix de la langue': 'Language selection',
   'Nouveau message depuis le portfolio': 'New message from the portfolio',
 }
 
@@ -96,8 +96,8 @@ export default function usePageLanguage(language) {
   useEffect(() => {
     document.documentElement.lang = language
     document.title = language === 'en'
-      ? 'O’nel iloris SEGBOZO — Software & mobile developer'
-      : 'O’nel iloris SEGBOZO — Développeur logiciel & mobile'
+      ? "O'nel iloris SEGBOZO — Software & mobile developer"
+      : "O'nel iloris SEGBOZO — Développeur logiciel & mobile"
     translateTree(document.body, language)
     const observer = new MutationObserver((mutations) => mutations.forEach((mutation) => {
       if (mutation.type === 'characterData') translateTextNode(mutation.target, language)
